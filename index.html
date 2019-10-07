@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<head>
+ <title>K. Linh Le Vu | Portfolio</title>
+ <html lang="en">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
+ <link rel="stylesheet" href="styles.css"/> 
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,400i,700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+<header></header>
+
+<main>
+    <section id="intro">
+        <div class="intro-wrap">
+        <h1>Form follows Usability.</h1>
+        <div class="intro">Hello, my name is Linh.<br/>
+            I am an UI/UX master graduate with 4 years of non-intensive experience as a freelance Graphic Designer. </div>
+        </div>
+    </section>
+
+    <section id="works">
+      <div class="work-wrap"> 
+        <div class="odd left">
+            <div class="cover-img viseo" onclick="openModal();currentSlide(1);disablescroll()"></div>
+            <h3>Viseo iberia summer newsletter</h3>
+            <h5>Web, Digital publication</h5>
+        </div>
+        <div class="odd">
+            <div class="cover-img maplink" onclick="openModal();currentSlide(2);disablescroll()"></div>
+            <h3>Maplink</h3>
+            <h5>Product Design, UI/UX</h5>
+        </div>
+        <div class="odd right"> 
+            <div class="cover-img sbs" onclick="openModal();currentSlide(3);disablescroll()"></div>
+            <h3>Side by Side Hustle landing page</h3>
+            <h5>Product design, Digital publication</h5>
+        </div>
+        <div class="even left">
+            <div class="cover-img htn" onclick="openModal();currentSlide(4);disablescroll()"></div>
+            <h3>Freelance cinematographer namecard</h3>
+            <h5>Graphic design, Print</h5>
+        </div>
+        <div class="even">
+            <div class="cover-img vnexpress" onclick="openModal();currentSlide(5);disablescroll()"></div>
+            <h3>VietnamExpress restaurant banner</h3>
+            <h5>Graphic design, Print</h5>
+        </div>
+        <div class="even right">
+            <div class="cover-img"></div>      
+        </div>
+      </div> 
+
+      <div class="divider"></div>
+    </section>
+
+
+    <section id="contact">
+        <div class="intro" >You can reach me at:</div>
+        <div class="email">
+            <a class="tooltip" href="mailto:levuklinh@gmail.com"><input autocomplete="off" type="text" id="email" value="levuklinh@gmail.com"/><span class="tooltiptext">Click to open mail</span></a>
+            <button onclick="copy()" class="copy-btn" id="copy-btn">Copy</button>
+        </div>
+    </section>
+
+    <section id="cv">
+        <div class="row">
+            <div class="col1">
+              <p class="tech"><b>Education</b></p><hr class="long_hr"/>
+              <h4>MA Digital Experience Design<br/>
+                BAU - Centro Universitario de Diseño</h4>
+              <h5>2018-2019, Barcelona, Spain.</h5>
+  
+              <h4>Bachelor of Fine Arts <br/>
+                Universidad de La Laguna.</h4>
+              <h5>2014-2018, Tenerife, Spain.</h5>
+            </div>
+            
+             <div class="col2">
+               <p class="tech">Exchange programs:</p>
+                 <h4>Univerza v Mariboru.</h4>
+                 <h5>Erasmus - 2017, Maribor. Slovenia.</h5>
+
+                 <h4>Universidad de País Vasco.</h4>
+                 <h5>SICUE - 2017/2018,  Bilbao. Spain.</h5>
+             </div>
+           </div>   
+          
+
+          <div class="row">
+             <div class="col1">
+              <p class="tech"><b>Work experience</b></p><hr class="long_hr"/>
+              <h4>VISEO Iberia <br/>
+                UX Intern </h4>
+              <h5>Jul - Sept 2019, Barcelona</h5>
+
+              <h4>TEA Tenerife Espacio de las Artes <br/> Departamento de colección. <br/>
+                Internship </h4>
+              <h5>Feb - June 2018, Tenerife</h5>
+             </div>
+             <div class="col2">
+             <h4>Freelance <br/>
+                Graphic Designer </h4>
+             <h5>2010 - 2014 (aprox), Vietnam</h5>
+             </div>
+          </div>
+
+        <div class="row">
+          <div class="prize">
+           <p class="tech"><b>Award</b></p><hr/>
+           <span><strong>Best Series</strong>  -  <em>Natura Morta</em></span>
+           <h4>XXIII Premio Internacional de Fotografía <br/> 
+            Rafael Ramos García de la Universidad <br/> de La Laguna 2018 </h4>
+           <h5>Feb - June 2018, Tenerife</h5>
+          </div>
+        
+          <div class="cert">
+           <p class="tech"><b>Certifications</b></p><hr/>
+           <span><strong>Responsive Web Design Certifications</strong>  -  300h</span>
+           <h4>Issued by freeCodeCamp </h4>
+           <h5>May 2019</h5>
+          </div>
+        </div>
+    </section>
+
+    <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal();enablescroll()">&times;</span>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        <div class="modal-content">
+      
+          <div class="mySlides viseo-modal">
+              <div class="viseo-cover">  
+                  <img class="viseo-main" src="media/viseo-1.png"/>
+                  <img class="viseo-main" src="media/viseo-2.png"/>
+              </div>
+              <div class="modal-content-bg">
+                 <div class="modal-left">
+                      <h5>Web, Digital Publication</h5>
+                      <h2>VISEO Iberia Summer Newsletter</h2>
+                       <p class="modal-p">This is one of my tasks during internship in VISEO Iberia. At that time, the company was at the transformation from the Birchman Group 
+                         to VISEO. Being assigned to design the Summer Newsletter based on the new style guide, I took that opportunity to improve some aspects of the layout. 
+                      </p>
+                      <p class="modal-p">I also did the markup with HTML and SASS, as well as published it to company’s existing SharePoint based Intranet.</p>
+                 </div>
+                 <div class="modal-right">
+                     <p class="bold">Product</p>
+                     <p class="modal-p">Internal Newsletter</p>
+                     <p class="bold">Client</p>
+                     <p class="modal-p">VISEO Iberia</p>
+                     <p class="bold">Industry</p>
+                     <p class="modal-p">IT Consulting</p>
+                 </div>
+  
+              </div>
+              
+          </div>
+      
+          <div class="mySlides maplink-modal">
+                <div class="maplink-cover">  
+                        <img src="media/maplink_mockup.png" alt="maplink mobile mockup">
+                </div>
+                    <div class="modal-content-bg _maplink">
+                       <div class="modal-left">
+                            <h5>Product Design, UI/UX</h5>
+                            <h2>Maplink</h2>
+                             <p class="modal-p">This my final project of Master of Digital Experience Design at BAU Barcelona in collaboration with another three classmates. 
+                                 We decided to work on the concert experience and focus on the organizers instead of the consumers. Specifically, we wanted to <em> explore 
+                                 problems that emerging artists are having during the whole concert experience and propose a solution with a digital product or service.</em>
+                            </p>
+                            <p class="modal-p">(More details of the whole process will be updated soon.)</p>
+                       </div>
+                       <div class="modal-right">
+                           <p class="bold">Product</p>
+                           <p class="modal-p">Product Design, UI/UX, Mobile Application</p>
+                           <p class="bold">Industry</p>
+                           <p class="modal-p">Music</p>
+                       </div>
+                       <p class="modal-p"><span class="blue-ml">Maplink</span> is a music-related job listings mobile application (soon in website). Additionally, musicians can 
+                           create his or her own profile or “curriculum”, to be found on artist listings. Users can communicate within the 
+                           site via private message. The purpose of <span class="blue-ml">Maplink</span> is to provide emerging musicians a centralized portal of job 
+                           opportunities.</p>
+                      <div class="maplink-screens">   
+                       <div class="maplink-col">
+                         <div class="screen-text">Performance opportunity listing</div>
+                         <img class="screen-foto" src="media/find-performance.gif"/>
+                       </div>
+                       <div class="maplink-col">
+                          <div class="screen-text">Musician profile listing + profile in detail</div>
+                          <img class="screen-foto" src="media/find-artist.gif"/>
+                        </div>
+                      </div>
+                        <div class="maplink-screens single">   
+                            <div class="maplink-col">
+                              <div class="screen-text">Menu/ Navigation and Personal panel</div>
+                              <img class="screen-foto" src="media/menu-profile.gif"/>
+                            </div>
+                        </div>
+                       
+                </div>
+          </div>
+
+          <div class="mySlides sbs-modal">
+                <div class="sbs-cover">  
+                        <img class="sbs-desk" src="media/pro-sbs.gif" alt="Landing Page desktop"><img class="sbs-mobile" src="media/sbs-mobile.gif" alt="Landing Page Mobile">
+                    </div>
+                    <div class="modal-content-bg">
+                       <div class="modal-left">
+                            <h5>Product Design, Digital Publication</h5>
+                            <h2>Side by Side hustle</h2>
+                             <p class="modal-p">Side by Side Hustle es el resultado de una sesión de Design Thinking cuando estaba en el máster de Experiencias Digitales en BAU. 
+                                    Los cuatros grupos trabajaron con cuatros temas asignados (Amor a distancia, Milenios, Fake News y Redes Sociales). De los cuáles trabajé primero con “amor a distancia” en 
+                                    empatizar y definir el problema, luego en la ideación y prototipo estuve con “milenios”. Desarrollé Side by Side Hustle y su landing.                                     
+                            </p>
+                            <div class="sub-left">
+                                <h6>Elevator Pitch</h6>
+                                <p class="modal-p">El objetivo de Side by Side Hustle es facilitar la búsqueda de personas con quienes colaborar en un proyecto.</p>
+                            </div>
+                            <div class="sub-right">    
+                                <h6>Usuario</h6>
+                                <p class="modal-p">Milenios que tienen muchas ganas de hacer realidad un proyecto pero les falta un equipo.</p>
+                            </div>
+                            <div class="proto-person">
+                                        <div class="tag-proto"><strong>Proto-persona</strong></div>                                
+                                          <img class="proto-foto" src="media/alexa_foto.png" alt="A photo of Alexa"/>
+                                          <div class="basic-info"><h4>Alexa, 26 años</h4> <p class="modal-p"> Trabaja en Marketing en <br/> una empresa mediana </p></div>                 
+                                            <ul class="problems"><b>Problemas</b>
+                                             <li>Le gusta su trabajo pero se sienten que le falta algo en su vida.</li>
+                                             <li>En su tiempo libre se dedica a experimentar con la repostería y tiene 
+                                                 la idea abrir una cafetería para dar a conocer sus recetas y crear un 
+                                                 punto de encuentro nuevo en su barrio.</li>
+                                             <li> embargo, al no tener recursos ni equipo, la idea se queda en el olvido 
+                                                 y Alexa se siente más vacío cada día.</li>
+                                             </ul>
+                            </div>  
+                       </div>
+                       <div class="modal-right">
+                           <p class="bold">Product</p>
+                           <p class="modal-p">Product Idea, Landing Page</p>
+                           <p class="bold">Industry</p>
+                           <p class="modal-p">Mobile Application</p>
+                       </div>
+        
+                    </div>      
+          </div>
+      
+          <div class="mySlides htn-modal">
+            <div class="htn-cover">  
+                <img src="media/htn_front.png"><img src="media/htn_back.png">
+            </div>
+            <div class="modal-content-bg">
+               <div class="modal-left">
+                    <h5>Graphic Design, Print</h5>
+                    <h2>Freelance Cinematographer Namecard</h2>
+                     <p class="modal-p">Dynamic, proactive, junior freelancer who is passionate with Black Magic Pocket Camera. 
+                    He was about to team up a Studio Production called KBTG (abbreviation for triangle kimbab in Vietnamese).
+                    </p>
+                    <p class="modal-p">Visual concepts developed from requirements and observations:</p>
+               </div>
+               <div class="modal-right">
+                   <p class="bold">Product</p>
+                   <p class="modal-p">Business Card</p>
+                   <p class="bold">Client</p>
+                   <p class="modal-p">Hoang Trung Nam (freelancer)</p>
+                   <p class="bold">Industry</p>
+                   <p class="modal-p">Cinematography, Video Production</p>
+               </div>
+               <img class="visual-concepts" alt="Candy pallete for the junior, triangle kimbab, Black Magic Pocket Camera" src="media/vc-htn.png">
+
+            </div>
+            
+          </div>
+      
+          <div class="mySlides vnexpress-modal">
+            <div class="vnexpress-cover">  
+                    <img src="media/vnexpress-mockup.png" alt="vietnam express banner">
+            </div>
+                <div class="modal-content-bg">
+                   <div class="modal-left">
+                        <h5>Graphic Design, Print</h5>
+                        <h2>VietnamExpress Restaurant Banner</h2>
+                         <p class="modal-p">Located in Madrid center, VietnamExpress is a food stall runned by a young, 
+                             enthusiastic team whose motivation is to promote Vietnamese Cultures and Cuisine, creating an authentic experience for explorers.
+                        </p>
+                        <p class="modal-p">Visual concepts developed from requirements and observations:</p>
+                   </div>
+                   <div class="modal-right">
+                       <p class="bold">Product</p>
+                       <p class="modal-p">Printed banner (136x18cm) for a kiosk</p>
+                       <p class="bold">Client</p>
+                       <p class="modal-p">Vietnam Express</p>
+                       <p class="bold">Industry</p>
+                       <p class="modal-p">Food & Beverage, Tourism</p>
+                   </div>
+                   <img class="visual-concepts" alt="Train ride: from north to south - the best way to get to know about VN 
+                   “Express” concept, Vietnamese visual culture reference: the press, Existing brand color: Crimson" src="media/vc-vnexpress.png">
+            </div>
+          </div>
+    
+
+        </div>
+      </div>
+</main>
+
+<footer>
+    <hr class="light"/>
+
+    2019 | Designed and built by klevu
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
