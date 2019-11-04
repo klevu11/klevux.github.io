@@ -157,6 +157,14 @@ div.even {
     padding-bottom: 0;
 }
 
+@media (max-width: 1268px) {
+    .work-wrap > div {
+        border: none;
+        padding: 1rem;
+     }
+  }
+
+
 .divider{
     padding-top: 5rem;
     width: 100%;
